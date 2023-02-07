@@ -1,0 +1,90 @@
+/* reset margin, padding */
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.banner {
+  height: 500px;
+  background-image: url("./pic/workbench.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* create distance for child so the horizontal scroll not disappear */
+  padding: 10px;
+  .about-signin-contact {
+    border: 1px solid red;
+    height: 80px;
+    width: 100%;
+    text-align: right;
+    .about,
+    .sign-in,
+    .contact {
+      text-decoration: none;
+      display: inline-block;
+      /* theo chieu kim dong ho */
+      margin: 20px 30px 0 0;
+      padding: 10px;
+      text-transform: uppercase;
+    }
+    .about :hover {
+      text-decoration: underline;
+    }
+    .sign-in {
+      border: 1px solid;
+      border-radius: 20px;
+      padding: 0 7px 0 7px;
+    }
+    .contact :hover {
+      text-decoration: underline;
+    }
+  }
+  .logo {
+    background: url("./pic/cat.png") center center no-repeat;
+    height: 150px;
+    width: 100%;
+    background-size: contain;
+    margin-top: 30px;
+  }
+  .icons {
+    margin-top: 10px;
+    height: 70px;
+    width: 100%;
+    display: inline-block;
+    .left,
+    .right,
+    .center {
+      width: 33%;
+      display: inline-block;
+      text-align: center;
+      img {
+        width: 15%;
+        height: 60px;
+      }
+      span {
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  }
+  .intro-text {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .btnStart {
+    text-align: center;
+    button {
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 1px solid black;
+      border-radius: 20px;
+      padding: 15px 20px;
+      cursor: pointer;
+    }
+  }
+}
